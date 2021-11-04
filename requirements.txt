@@ -1,5 +1,5 @@
 fastapi[all]
 sqlalchemy
 alembic
-PyMySQL
+PyMySQL[rsa]
 Pillow

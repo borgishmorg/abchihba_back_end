@@ -9,7 +9,7 @@ services:
       - 4100:4000
     environment:
       ENABLE_AUTORELOAD: 'False'
-      DB_DSN: 'mariadb+pymysql://user:password@db/db'
+      DB_DSN: 'mysql+pymysql://user:63t637gdwuy@localhost/db'
 
   db:
     image: mysql
