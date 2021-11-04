@@ -4,21 +4,23 @@ services:
   api:
     build: .
     image: api
+    container_name: api
     restart: always
     ports:
       - 4100:4000
     environment:
       ENABLE_AUTORELOAD: 'False'
-      DB_DSN: 'mysql+pymysql://user:63t637gdwuy@localhost/db'
+      DB_DSN: 'mysql+pymysql://user:63t637gdwuy@db/db'
 
   db:
     image: mysql
+    container_name: db
     restart: always
     environment:
       MYSQL_DATABASE: 'db'
       MYSQL_USER: 'user'
-      MYSQL_PASSWORD: 'password'
-      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_PASSWORD: '63t637gdwuy'
+      MYSQL_ROOT_PASSWORD: '63t637gdwuy'
     ports:
       - 3306:3306
     expose:
