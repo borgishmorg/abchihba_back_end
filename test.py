@@ -8,7 +8,7 @@ parser.add_argument(
     default='localhost',
     action='store',
     type=str,
-    help='api host'
+    help='api host in format "X.X.X.X"'
 )
 parser.add_argument(
     '--port',
