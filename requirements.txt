@@ -3,3 +3,4 @@ sqlalchemy
 alembic
 PyMySQL[rsa]
 Pillow
+numpy
